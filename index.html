@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Vakantie boeken</title>
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <nav>
+        <img id="logo" src="images/logovakan.png" alt="afbeelding-logo-site">
+        <a href="#Vakantie boeken">Vakantie boeken</a>
+        <a href="#recommended">Aanbevolen</a>
+        <a href="#form">Formulier</a>
+    </nav>
+
+    <header id="Vakantie-boeken">
+        <h1>Vakantie boeken?</h1>
+        <p>"Voel de frisse zeewind op je gezicht, laat de warme zonnestralen je huid strelen en omarm de vrijheid van
+            een
+            zorgeloze vakantie. Het is tijd om te ontsnappen aan de dagelijkse sleur en jezelf te verwennen met een
+            welverdiende
+            vakantie. Stel je voor: adembenemende zonsondergangen, culturele ontdekkingen, heerlijke lokale gerechten en
+            nieuwe
+            vriendschappen wachten op je. Een vakantie is niet alleen een pauze, het is een avontuur dat je horizon
+            verbreedt
+            en je ziel voedt. Dus pak je koffers en laat je dromen uitvliegen. Een onvergetelijke reis wacht op je.
+            Boek nu en maak herinneringen die een leven lang meegaan!" 🌴☀️✈️</p>
+        <a href="" id="Bestel-link">Bestellen</a>
+    </header>
+
+    <main>
+        <section class="gerelateerd" id="recommended">
+            <h2>Aanbevolen vakanties</h2>
+            <div class="product-container">
+
+                <section class="other-products">
+                    <div class="product">
+                        <img src="images/ibiza.jpg" alt="Ibiza">
+                        <h3>Ibiza</h3>
+                        <div class="rating">★★★</div>
+                        <p>"Ervaar de ultieme vrijheid op Ibiza, waar betoverende stranden, bruisend nachtleven en
+                            onvergetelijke zonsondergangen samenkomen voor een magische vakantie-ervaring." ☀️🏖️🎉</p>
+                        <a href="" id="ibiza">Bestellen</a>
+                    </div>
+                    <div class="product">
+                        <img src="images/zweden.jpg" alt="Zweden">
+                        <h3>Zweden</h3>
+                        <div class="rating">★★★★★</div>
+                        <p>"Ontdek de betoverende schoonheid van Zweden, waar eindeloze bossen, kristalheldere meren en
+                            kleurrijke steden een perfecte balans bieden tussen avontuur en rust." 🌲🏞️</p>
+                        <a href="" id="zweden">Bestellen</a>
+                    </div>
+                    <div class="product">
+                        <img src="images/India.jpg" alt="India">
+                        <h3>India</h3>
+                        <div class="rating">★★★★</div>
+                        <p>"Laat je ziel ontwaken tijdens een spirituele reis naar India, waar eeuwenoude tempels,
+                            meditatieve yoga-sessies en spirituele leringen je verbinden met de diepste kern van jezelf
+                            en de rijke spirituele erfenis van het land." 🕉️🙏</p>
+                        <a href="" id="india">Bestellen</a>
+                    </div>
+                    
+                </section>
+            </div>
+        </section>
+
+        <section class="vakantie-formulier" id="form">
+            <h2>Vraagformulier</h2>
+            <form action="" method="post">
+                <div class="form-row">
+                    <div class="form-group" id="voornaam-group">
+                        <label for="voornaam">Voornaam:</label>
+                        <input type="text" id="voornaam" name="voornaam" required>
+                    </div>
+                    <div class="form-group" id="achternaam-group">
+                        <label for="achternaam">Achternaam:</label>
+                        <input type="text" id="achternaam" name="achternaam" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="woonplaats">Woonplaats:</label>
+                        <input type="text" id="woonplaats" name="woonplaats" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="geboortedatum">Geboortedatum:</label>
+                        <input type="date" id="geboortedatum" name="geboortedatum" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="vakantie">Vakantiebestemming:</label>
+                    <select id="vakantie" name="vakantie">
+                        <option value="ibiza">Ibiza</option>
+                        <option value="zweden">Zweden</option>
+                        <option value="india">India</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="bericht">Bericht:</label>
+                    <textarea id="bericht" name="bericht"></textarea>
+                </div>
+                <div class="form-group" id="nieuwsbrief-group">
+                    <label>Inschrijven voor nieuwsbrief:</label>
+                    <div class="radio-buttons">
+                        <label>
+                            <input type="radio" name="nieuwsbrief" value="yes" required> Ja
+                        </label>
+                        <label>
+                            <input type="radio" name="nieuwsbrief" value="no" required> Nee
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="voorwaarden">Akkoord met algemene voorwaarden:</label>
+                    <input type="checkbox" id="voorwaarden" name="voorwaarden" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="submit-button" value="Versturen">
+                </div>
+            </form>
+
+
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <img src="images/logovakan.png" alt="afbeelding-logo-site">
+            <p>Copyright 2023 VakanAway</p>
+            <a href="https://www.instagram.com/" class="social-link" target="_blank">
+                <img src="images/socials.png" alt="Afbeelding-link-naar-socials">
+            </a>
+        </div>
+        <div class="footer-right">
+            <a href="#">Privacyverklaring</a>
+            <a href="#">Algemene voorwaarden</a>
+            <a href="#">Cookiebeleid</a>
+            <a href="#">Contact</a>
+        </div>
+    </footer>
+    
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap');
+
+body {
+    margin: 0;
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    height: 100%;
+}
+
+nav {
+    background-color: rgb(40, 36, 36);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 2vw;
+}
+
+nav #logo {
+    width: 15vw;
+    height: auto;
+    margin-right: auto;
+}
+
+nav a {
+    margin-left: 2vw;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: lightblue;
+}
+
+#Bestel-link{
+    text-decoration: none;
+    color: black;
+    border: 2px solid;
+    padding: 1vw;
+    transition: all 0.3s ease;
+}
+
+#Bestel-link:hover{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+header {
+    background-image: url(https://cdn.d-reizen.nl/images/LandingPages/GeotextImages/dreizen/nl/bulgarije-sunnybeach-strand-parasols.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 12vw 0;
+    font-size: 110%;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5vw;
+}
+
+.gerelateerd {
+    border-top: 2px solid black;
+    text-align: center;
+    padding: 2vw 0;
+}
+
+.other-products {
+    display: flex;
+    justify-content: space-around;
+    margin: 2vw 0;
+}
+
+.product {
+    border: 1px solid black;
+    padding: 0;
+    text-align: center;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.rating {
+    margin-top: 0.3vw;
+    font-size: 20px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.product h3,
+.product p {
+    margin: 0.8vw 0;
+}
+
+
+.product a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.product a:hover {
+    color: lightblue;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.vakantie-formulier {
+    background-color: #f2f2f2;
+    padding: 1vw 100vw;
+}
+
+form {
+    text-align: center;
+    margin-top: 4.5vw;
+}
+
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5vw;
+}
+
+.form-group {
+    margin-bottom: 1.5vw;
+    margin-right: 1.5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#nieuwsbrief-group .radio-buttons {
+    display: flex;
+    gap: 1.5vw;
+}
+
+#nieuwsbrief-group .radio-buttons label {
+    display: flex;
+    align-items: center;
+}
+
+#voornaam-group{
+    margin-right: 10px;
+}
+
+.submit-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 1vw 2vw;
+    border-radius: 0.3vw;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.8vw;
+    border: 1px solid #ccc;
+    border-radius: 0.4vw;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw;
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-left img {
+    margin-right: 1vw;
+    max-width: 8vw;
+}
+
+.footer-right a {
+    color: white;
+    margin-right: 2vw;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-right a:hover {
+    color: lightblue;
+}
+
+
+.social-link img {
+    max-width: 5vw;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover img {
+    transform: scale(1.2);
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 375px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav #logo {
+        margin: 1vw 0;
+        width: 40vw;
+        height: auto;
+    }
+
+    nav a {
+        margin: 1vw 0;
+    }
+
+    header {
+        padding: 10vw 0;
+    }
+
+    .other-products {
+        flex-direction: column;
+    }
+
+    .product {
+        width: 80%;
+        margin-bottom: 2vw;
+    }
+
+    .vakantie-formulier {
+        padding: 1vw 2vw;
+    }
+
+    form {
+        margin-top: 2vh;
+    }
+
+    .form-row,
+    .form-group {
+        flex-direction: column;
+        margin-right: 0;
+        margin-bottom: 1vh;
+    }
+
+    .submit-button {
+        padding: 0.8vw 1.6vh;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left img {
+        margin: 0;
+        margin-bottom: 1vw;
+        max-width: 60%;
+        height: auto;
+    }
+
+    .footer-right a {
+        margin-right: 0;
+        margin-bottom: 0.8vh;
+        display: block;
+    }
+
+    .social-link {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-link img {
+        margin: 0 1vw;
+        max-width: 50%;
+        height: auto;
+    }
+}
+
